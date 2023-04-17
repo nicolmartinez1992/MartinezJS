@@ -11,7 +11,7 @@ do {
     precio = Number(prompt("Ingrese el valor de su producto aquí:"));
     if (Number(precio)) {
         multiplicar(precio, 0.90)
-        alert("El valor del producto con el 10% de descuento es:" + " " + resultado)
+        alert("El valor del producto con el 10% de descuento es: " + resultado)
         otroPrecio = prompt("¿Desea ingresar otro valor? S/N").toUpperCase();
     } else {
         alert("El valor ingresado no es correcto")
