@@ -3,19 +3,19 @@
 let precio;
 let resultado = 0;
 let otroPrecio;
+function multiplicar(precio, descuento) {
+    resultado = precio * descuento
+}
 
 do {
     precio = Number(prompt("Ingrese el valor de su producto aquí:"));
     if (Number(precio)) {
-        function multiplicar(precio, descuento) {
-            resultado = precio * descuento
-            alert("El valor del producto con el 10% de descuento es:" + " " + resultado)
-        }
+        multiplicar(precio, 0.90)
+        alert("El valor del producto con el 10% de descuento es:" + " " + resultado)
+        otroPrecio = prompt("¿Desea ingresar otro valor? S/N").toUpperCase();
     } else {
         alert("El valor ingresado no es correcto")
     }
-    multiplicar(precio, 0.90)
-    otroPrecio = prompt("¿Desea calcular otro valor? S/N").toUpperCase();
 } while (otroPrecio == "S")
 
 
